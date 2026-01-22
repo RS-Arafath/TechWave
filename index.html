@@ -27,47 +27,52 @@
 
   <body class="">
     <header class="w-full bg-[#1A0B2E]">
-      <nav class=" border-b border-gray-50">
-        <div class=" nav-container items-center text-white justify-between max-w-6xl m-auto p-7 flex ">
+      <nav class=" border-b border-gray-50 mb-6">
+        <div class=" nav-container items-center  text-white justify-between max-w-6xl m-auto p-4 flex ">
           <h2 class="text-3xl font-bold">Tech<span
               class="text-3xl font-black uppercase tracking-tighter bg-[linear-gradient(30deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] bg-clip-text text-transparent ">Wave</span>
           </h2>
-          <ul class="flex gap-8 ">
+          <ul class=" gap-8 hidden sm:flex">
             <li><a href="#">About</a></li>
             <li><a href="#">Episodes</a></li>
             <li><a href="#">Host</a></li>
           </ul>
-          <div>
-            <button class="flex cursor-pointer items-center gap-3 px-4 py-3 font-semibold text-white rounded-full 
+          <!-- <div><h1><i class="fa-solid fa-bars  lg:hidden "></i></h1></div> -->
+
+          <div class="nav-btn">
+            <button class="flex cursor-pointer items-center gap-3 px-4 py-3 font-semibold text-white rounded-full text-xs lg:text-base
                bg-[linear-gradient(30deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] 
                hover:scale-105 transition-transform duration-400 shadow-lg">Subscribe<i
                 class="fa-solid fa-arrow-right"></i></button>
-
           </div>
-        </div>
 
       </nav>
 
       <!-- ~~~~~~~~~hero-section~~~~~~~~ -->
       <div class="hero">
-        <div  class="hero-container">
-       
-            <img src="./images/hero-bg.png" alt="" class="hero-img">
-            <div class="hero-content text-center items-center  w-[550px] m-auto mb-9">
-              <h1 class="font-bold text-[5vw] text-white mb-2">TechWave</h1>
-              <p class="text-gray-400 text-[1vw]">Your daily dose of tech insights, productivity hacks, and personal growth</p>
-              <div class=" text-white align-baseline mt-6 ">
-                <button class=" cursor-pointer items-center gap-3 px-4 py-3 font-semibold text-white rounded-full text-[1.2vw]
+        <div class="hero-container">
+
+          <img src="./images/hero-bg.png" alt="" class="hero-img">
+          <div class="hero-content text-center items-center  w-[90%] m-auto mt-7">
+            <h1 class="font-bold text-[5vw] text-white mb-2">TechWave</h1>
+            <p class="text-gray-400 text-xs lg:text-base">Your daily dose of tech insights, productivity hacks, and
+              personal
+              growth</p>
+            <div class=" text-white align-baseline mt-6 mb-14 sm:flex-col">
+              <button class=" cursor-pointer items-center gap-3 px-4 py-3 font-semibold text-white rounded-full text-xs lg:text-base
                bg-[linear-gradient(30deg,#F7E93F_0%,#FB09B4_51%,#9100F8_100%)] 
-               hover:scale-105 transition-transform duration-400 shadow-lg"><i class="fa-brands fa-spotify"></i>Listen on Spotify</button>
-                <button class="border-2 text-[#00FF88] items-center items-center gap-3 px-4 py-3 font-semibold rounded-full ml-5 text-[1.2vw] hover:scale-105 transition-transform duration-400 shadow-lg"><i class="fa-regular fa-envelope"></i> Subscribe</button>
-              </div>
+               hover:scale-105 transition-transform duration-400 shadow-lg"><i class="fa-brands fa-spotify"></i>Listen
+                on Spotify</button>
+              <button
+                class="border-2 text-[#00FF88] items-center items-center gap-3 px-4 py-3 font-semibold rounded-full ml-5 text-xs lg:text-base hover:scale-105 transition-transform duration-400 shadow-lg"><i
+                  class="fa-regular fa-envelope"></i> Subscribe</button>
             </div>
-          
+          </div>
+
           <div class="img-box">
             <img src="./images/hero-circle.png" alt="circle-img" class="middle-img">
             <span class="badge">NEW</span>
-            <img src="./images/microphone.png" alt="" class="top-img">
+            <img src="./images/microphone.png" alt="" class="top-img text-base">
           </div>
 
 
@@ -77,6 +82,79 @@
       </div>
 
     </header>
+
+    <main>
+
+      <!-- ~~~~~~~~~~~about section~~~~~~~~ -->
+      <section class="about pt-11 bg-[#1A0B2E] lg:bg-[#1A0B2E]">
+        <div class="about-container mt-9  items-center content-center text-center">
+          <div class="about-content  w-[90%]  ">
+            <h1 class="text-white text-2xl font-bold pb-4">About the Podcast</h1>
+            <p class="text-gray-400 text-xs lg:text-base pb-5 lg:pb-7 leading-5">TechWave is your go-to podcast for
+              staying ahead in the fast-paced
+              world of technology.
+              We break down complex topics into digestible insights, explore productivity strategies that actually work,
+              and share stories of personal growth from industry leaders.
+            </p>
+            <p class="pb-10 lg:pb-17 text-gray-400 text-xs lg:text-base leading-5">Join thousands of young professionals
+              and tech enthusiasts who
+              start their day with TechWave.</p>
+          </div>
+          <div class="about-rating border-t border-gray-50">
+            <ul
+              class=" review-item  grid grid-rows-2 grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 gap-10  items-center text-center content-center pt-10 lg:pt-17">
+              <li>
+                <h3 class="text-[48px] lg:text-[58px] font-bold  text-[#00FF88]">150K+</h3>
+                <p class="text-white text-sm lg:text[16px]">Monthly Listeners</p>
+              </li>
+              <li>
+                <h3 class="text-[48px] lg:text-[58px] font-bold  text-[#00FF88]">200+</h3>
+                <p class="text-white text-sm lg:text[16px]">Episodes Published</p>
+              </li>
+              <li>
+                <h3 class="text-[48px] lg:text-[58px] font-bold  text-[#00FF88]">4.9<i
+                    class="fa-solid fa-star text-4xl items-center content-center"></i></h3>
+                <p class="text-white text-sm lg:text[16px]">Average Rating</p>
+              </li>
+              <li>
+                <h3 class="text-[48px] lg:text-[58px] font-bold  text-[#00FF88]">50+</h3>
+                <p class="text-white text-sm lg:text[16px]">Industry</p>
+              </li>
+
+
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ~~~~~~~~~~quality~~~~~~~~~~~ -->
+       <section class="quality">
+      <section class="quality-container">
+        <div class="quality-box">
+          <div class="side-bar">sidebar</div>
+
+          <div class="long-layout">sidebar</div>
+
+          <div class="long-layout">sidebar</div>
+
+          <!-- <div class="side-bar">sidebar</div>
+          <div class="long-layout">sidebar</div> -->
+          
+          <div class="long-layout">sidebar</div>
+          
+          
+          <div class="normal-layout">sidebar</div>
+          
+          
+        
+
+
+
+        </div>
+      </section>
+      </section>
+    </main>
 
   </body>
 
